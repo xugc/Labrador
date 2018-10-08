@@ -1,0 +1,1 @@
+.header{height:90rpx;margin-top:20rpx}.header image{height:70rpx;width:70rpx}.header .center{-webkit-box-flex:1;-webkit-flex:1;flex:1;height:90rpx;margin:0 10rpx!important}.center ._input{background-color:#fff;border-radius:10rpx}

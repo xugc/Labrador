@@ -1,0 +1,2 @@
+<import src="/components/topbar/topbar.vue.wxml" />
+<import src="/components/list/list.vue.wxml" />

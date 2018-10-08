@@ -1,0 +1,13 @@
+<template name="3052109e">
+  <view class="_view data-v-39c2f13f container">
+    <view class="_view data-v-39c2f13f login-view">
+      <image src="../../static/login.png" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_image data-v-39c2f13f"></image>{{userName}} </view>
+    <view class="_view data-v-39c2f13f uni-card">
+      <view class="_view data-v-39c2f13f uni-list">
+        <view class="_view data-v-39c2f13f uni-list-cell" wx:key="index" key="{{index}}" wx:for="{{menuList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_view data-v-39c2f13f uni-list-cell-navigate uni-navigate-right"> {{item.name}} </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

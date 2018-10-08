@@ -1,0 +1,19 @@
+<import src="/components/list/list.vue.wxml" />
+<template name="76946f68">
+  <view class="_view data-v-1cf5914b index">
+    <scroll-view id="tab-bar" class="_scroll-view data-v-1cf5914b swiper-tab" scroll-x scroll-left="{{scrollLeft}}">
+      <block wx:key="tab.id" key="{{tab.id}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="tab">
+        <view id="{{tab.id}}" data-current="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" class="_view data-v-1cf5914b {{['swiper-tab-list', currentTab == index ? 'on' : '']}}">{{tab.name}}</view>
+      </block>
+    </scroll-view>
+    <swiper current="{{currentTab}}" class="_swiper data-v-1cf5914b swiper-box" duration="300" bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+      <block wx:key="index1" key="{{index1}}" wx:for="{{tabs}}" wx:for-index="index1" wx:for-item="item">
+        <swiper-item class="_swiper-item data-v-1cf5914b">
+          <scroll-view class="_scroll-view data-v-1cf5914b index-bd" scroll-y>
+            <template data="{{...$root[$kk+'0-'+index1], $root}}" is="b5188868"></template>
+          </scroll-view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</template>

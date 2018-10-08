@@ -1,0 +1,35 @@
+<script>
+	export default {
+		onLaunch: function() {
+			console.log('App Launch')
+		},
+		onShow: function() {
+			console.log('App Show')
+		},
+		onHide: function() {
+			console.log('App Hide')
+		}
+	}
+</script>
+
+<style>
+	/*每个页面公共css */
+
+	page {
+		background-color: #F8F8F8;
+		height: 100%;
+		font-size: 32upx;
+		line-height: 1.6;
+	}
+
+	/* page */
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		width: 100%;
+		font-size: 32upx;
+		font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+	}
+</style>
